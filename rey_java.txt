@@ -1,0 +1,7 @@
+class Main{
+    public static void main(String[]ags){
+        int a = 2;
+        String result = (a% 2==0)?"Even":"Odd";
+        System.out.println(result);
+    }
+}
