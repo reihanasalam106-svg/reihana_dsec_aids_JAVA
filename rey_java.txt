@@ -1,7 +1,103 @@
+1) Even or Odd
 class Main{
     public static void main(String[]ags){
         int a = 2;
         String result = (a% 2==0)?"Even":"Odd";
+        System.out.println(result);
+    }
+}
+
+2)Positive,negative or zero 
+class Main{
+    public static void main(String[]ags){
+        int a = -10;
+        String result =(a>0)?"Positive":(a<0)?"Negative":"Zero";
+        System.out.println(result);
+    }
+}
+
+
+3)Eligible or not eligible
+class Main{
+    public static void main(String[]ags){
+        int a = 25;
+        String result =(a>=18)?"Eligible":"Not Eligible";
+        System.out.println(result);
+    }
+}
+
+
+4)balance
+class Main{
+    public static void main(String[]ags){
+        int balance = 10000;
+        System.out.println(balance);
+        balance+=8000;
+        System.out.println(balance);
+        balance-=1000;
+        System.out.println(balance);
+        balance*=2;
+        System.out.println(balance);
+    }
+}
+
+
+5) Pass or fail
+class Main{
+    public static void main(String[]ags){
+        int a=35;
+        int pass=35;
+        String result =(a>=pass)?"Pass":"Fail";
+        System.out.println(result);
+    }
+}
+
+
+6) Divisible or not divisible
+class Main{
+    public static void main(String[]ags){
+        int a=25;
+        String result =(a%3==0 && a%5==0)? "Divisible by both": " Not Divisible by both";
+        System.out.println(result);
+    }
+}
+
+
+7) Greater than or equal
+class Main{
+    public static void main(String[]ags){
+        int a= 100;
+        int b= 20;
+        System.out.println((a==b ? "Equal": a>b ? a:b));
+    }
+}
+
+
+8) Last digit even or not 
+class Main{
+    public static void main(String[]ags){
+        int a=24;
+        String result =(Math.abs(a % 10) %2 == 0)? "Yes" : "NO";
+        System.out.println(result);
+    }
+}
+
+9) Pass or Fail
+class Main{
+    public static void main(String[]ags){
+        int a=25;
+        int b=80;
+        int c=60;
+        String result =(a>=35 && b>=35 && c>=35)? "Pass": " Fail";
+        System.out.println(result);
+    }
+}
+10) Free delivery or not
+class Main{
+    public static void main(String[]ags){
+        int amount = 8000;
+        boolean premium = true;
+        String result =(amount> 1000 || premium)? "Free delivery" : "Delivery charge apply";
         System.out.println(result);
     }
 }
