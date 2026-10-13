@@ -1,0 +1,161 @@
+1) Hello Java
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, Java!");
+        System.out.println("Welcome to Programming.");
+        System.out.println("My journey starts today.");
+    }
+}
+
+
+2) College Information
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("College: ABC Engineering College");
+        System.out.println("Department: Computer Science");
+        System.out.println("Course: Java Programming");
+    }
+}
+
+
+3) Single line display
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Java is powerful");
+    }
+}
+
+
+4) Escape sentence
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Name\t: Reihana");
+        System.out.println("Course\t: Java");
+        System.out.println("Level\t: Beginner");
+    }
+}
+
+
+5) Student profile
+
+public class Main {
+    public static void main(String[] args) {
+        String name = "Reihana";
+        int age = 20;
+        char grade = 'B';
+        boolean placementStatus = false;
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Grade: " + grade);
+        System.out.println("Placement Status: " + placementStatus);
+    }
+}
+
+
+6) datatypes
+
+
+public class Main {
+    public static void main(String[] args) {
+        int population = 8000000;
+        double price = 1499.95;
+        char bloodGroup = 'A';
+        boolean verified = true;
+        String name = "Reihana";
+
+        System.out.println("Population: " + population);
+        System.out.println("Product Price: " + price);
+        System.out.println("Blood Group: " + bloodGroup);
+        System.out.println("Account Verified: " + verified);
+        System.out.println("Employee Name: " + name);
+    }
+}
+
+
+7) Information card
+
+
+public class Main {
+    public static void main(String[] args) {
+        String name = "Laptop";
+        int id = 101;
+        double price = 45000.0;
+        boolean available = true;
+
+        System.out.println("PRODUCT INFORMATION");
+        System.out.println("Name: " + name);
+        System.out.println("Product ID: " + id);
+        System.out.println("Price: " + price);
+        System.out.println("Available: " + available);
+    }
+}
+
+
+8) Age and City
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int age = sc.nextInt();
+        String city = sc.next();
+
+        System.out.println("Age: " + age);
+        System.out.println("City: " + city);
+    }
+}
+
+
+9) Student Registration
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String name = sc.nextLine();
+        int rollNumber = sc.nextInt();
+        sc.nextLine();
+        String department = sc.nextLine();
+        double percentage = sc.nextDouble();
+
+        System.out.println("STUDENT REGISTRATION");
+        System.out.println("Name: " + name);
+        System.out.println("Roll Number: " + rollNumber);
+        System.out.println("Department: " + department);
+        System.out.println("Percentage: " + percentage);
+    }
+}
+
+
+10) MOVIE Booking
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String customer = sc.nextLine();
+        String movie = sc.nextLine();
+        int tickets = sc.nextInt();
+        double ticketPrice = sc.nextDouble();
+
+        System.out.println("BOOKING SUMMARY");
+        System.out.println("Customer: " + customer);
+        System.out.println("Movie: " + movie);
+        System.out.println("Tickets: " + tickets);
+        System.out.println("Ticket Price: " + ticketPrice);
+    }
+}
