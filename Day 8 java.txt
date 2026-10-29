@@ -1,0 +1,118 @@
+1) Transpose 
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a[][]=new int[3][2];
+        for(int i=0; i<3; i++){
+            for(int j=0 ; j<2; j++){
+                a[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0; i<3; i++){
+            for(int j=0; j<2; j++){
+                System.out.print(a[i][j]+ " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+2) Diagonal elements and sum
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a[][]=new int[3][3];
+        int sum = 0;
+        for(int i=0; i<3; i++){
+            for(int j=0; j<3; j++){
+                a[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0; i<3; i++){
+            sum=sum+a[i][i];
+        }
+        System.out.println("Diagonal sum: " +sum);
+    }
+}
+
+3) Largest element(2D)
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a[][]=new int[2][3];
+        for(int i=0; i<2; i++){
+            for(int j=0; j<3; j++){
+                a[i][j]=sc.nextInt();
+            }
+        }
+        int largest =a[0][0];
+        for(int i=0;i<2;i++){
+            for(int j=0;j<3;j++){
+                if(a[i][j]>largest){
+                    largest=a[i][j];
+                }
+            }
+        }
+        System.out.println("Largest :" + largest);
+    }
+}
+
+
+4) reverse 
+
+import java.util.Scanner;
+ public class Main{
+     public static void main(String[]args){
+         Scanner sc=new Scanner(System.in);
+         String s=sc.nextLine();
+         String[] words=s.split(" ");
+         String result="";
+         for(int i=0; i<words.length; i++){
+             String word=words[i];
+             for(int j=word.length()-1;j>=0;j--){
+                 result+=word.charAt(j);
+             }
+             if(i< words.length -1){
+                 result +=" ";
+             }
+         }
+         System.out.println(result);
+     }
+ }
+
+5) Anagram or not Anagram
+
+import java.util.Scanner;
+ public class Main{
+     public static void main(String[]args){
+         Scanner sc=new Scanner(System.in);
+         System.out.println("Enter first word: ");
+         String s1=sc.nextLine();
+         System.out.println("Enter second word: ");
+         String s2=sc.nextLine();
+         if(s1.length() != s2.length()){
+             System.out.println("Not Anagram");
+         }else{
+             char[] a =s1.toCharArray();
+             char[] b =s2.toCharArray();
+             java.util.Arrays.sort(a);
+             java.util.Arrays.sort(b);
+             if(java.util.Arrays.equals(a,b)){
+                 System.out.println("Anagram");
+             }
+             else{
+                 System.out.println("Not Anagram");
+             }
+         }
+     }
+ }
+
+
+
