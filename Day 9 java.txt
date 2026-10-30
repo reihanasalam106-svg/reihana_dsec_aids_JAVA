@@ -1,0 +1,221 @@
+1) append 
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder("Hello");
+        sb.append("World");
+        System.out.println(sb);
+    }
+}
+
+2) insert
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder("Hello");
+        sb.insert(5 ,"0");
+        System.out.println(sb);
+    }
+}
+
+3) delete
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder("Hello World");
+        sb.delete(5,11);
+        System.out.println(sb);
+    }
+}
+
+4) deleteCharAt
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder("Hello World");
+        sb.deleteCharAt(1);
+        System.out.println(sb);
+    }
+}
+
+5) reverse
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder("Hello World");
+        sb.reverse();
+        System.out.println(sb);
+    }
+}
+
+6) replace
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder("Hello World");
+        sb.replace(0, 2,"Yo");
+        System.out.println(sb);
+    }
+}
+
+7) CharAt
+
+mport java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder("Java");
+        System.out.println(sb.charAt(2));
+    }
+}
+
+8) setcharAt
+
+mport java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder("Java");
+        System.out.println(sb.setcharAt(2));
+    }
+}
+
+9) length
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder("Java");
+        System.out.println(sb.length());
+    }
+}
+
+10) toString
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder("Hello World");
+        String s = sb.toString();
+        System.out.println(s);
+    }
+}
+
+11) 
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a Sentence");
+        String s = sc.nextLine();
+        StringBuilder sb = new StringBuilder(s);
+        for(int i=0; i< sb.length(); i++){
+            if(sb.charAt(i) == ' '){
+                sb.deleteCharAt(i);
+                i++;
+            }
+        }
+        System.out.println(sb);
+    }
+}
+
+12) To Eliminate first and last element
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        StringBuilder sb = new StringBuilder(s);
+        if(sb.length() >= 2){
+            sb.deleteCharAt(sb.length()-1);
+            sb.deleteCharAt(0);
+            System.out.println(sb);
+        }else{
+            System.out.println("Enter at least 3 characters");
+        }
+        
+    }
+}
+
+13) To print at least 3 characters
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a word");
+        String s = sc.nextLine();
+        StringBuilder sb = new StringBuilder(s);
+        if(sb.length() >= 3){
+            StringBuilder last = new StringBuilder(
+                sb.substring(sb.length()-3)
+            );
+            last.reverse();h
+            sb.replace(sb.length()-3,sb.length(),last.toString());
+            System.out.println(sb);
+        }else{
+            System.out.println("Enter at least 3 characters");
+        }
+        
+    }
+}
+
+14) Buffered Reader
+
+import java.io.*;
+public class Main{
+    public static void main(String[]args)throws Exception{
+        BufferedReader br = new BufferedReader(
+            new InputStreamReader(System.in)
+        );
+        System.out.println("Enter your name: ");
+        String name = br.readLine();
+        System.out.println("Welcome " + name);        
+    }
+}
+
+15) Electricity Bill
+
+import java.io.*;
+public class Main{
+    public static void main(String[]args)throws Exception{
+        BufferedReader br = new BufferedReader(
+            new InputStreamReader(System.in)
+        );
+        System.out.println("Enter Electricity units: ");
+        int units = Integer.parseInt(br.readLine());
+        double bill;
+        if(units < 0){
+            System.out.println("Invalid units");
+            return;
+        }
+        if(units <= 100){
+            bill = units * 2;
+        }else if(units <= 200){
+            bill = (100*2) + (units -100) *3;
+        }else{
+            bill = (100*2) + (100 *3) + (units -200) *5;
+        }
+        System.out.println("Electricity Bill : Rs." + bill);        
+    }
+}
+
+
+
+
